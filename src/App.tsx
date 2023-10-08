@@ -15,7 +15,7 @@ function App() {
         }}
       >
         <Routes>
-          <Route path="/" element={<SearchPage />} />
+          <Route path="/avia" element={<SearchPage />} />
           <Route path="/avia/info" element={<ResultPage />} />
         </Routes>
       </Container>

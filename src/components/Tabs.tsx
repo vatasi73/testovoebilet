@@ -23,6 +23,7 @@ const Tabs = () => {
   const dispatch = useAppDispatch();
 
   const handleChange = (event: React.SyntheticEvent, newValue: number) => {
+    event.preventDefault();
     setValue(newValue);
     dispatch(setDepartureTime(time[newValue].departure));
     dispatch(setArrivalTime(time[newValue].arrival));
